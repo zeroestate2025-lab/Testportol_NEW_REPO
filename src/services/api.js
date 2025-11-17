@@ -3,8 +3,8 @@ import axios from "axios";
 
 // ✅ Create axios instance
 const API = axios.create({
-  baseURL: "http://localhost:5000/api",
-  // baseURL: "https://testportalserver.onrender.com/api",
+  // baseURL: "http://localhost:5000/api",
+  baseURL: "https://testportalserver.onrender.com/api",
   timeout: 10000,
 });
 
