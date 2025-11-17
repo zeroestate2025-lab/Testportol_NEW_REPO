@@ -1,0 +1,603 @@
+/* 🎨 Import Poppins Font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* 🌟 General Layout */
+.admin-dashboard {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff8f3;
+  min-height: 100vh;
+  padding: 40px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* 🌟 Header */
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.admin-header h2 {
+  font-family: 'Poppins', sans-serif;
+  color: #f27059;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.logout-btn {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f27059;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  padding: 8px 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.logout-btn:hover {
+  background-color: #f4845f;
+  transform: translateY(-2px);
+}
+
+/* 🌟 Tabs */
+.tab-buttons {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.tab-btn {
+  font-family: 'Poppins', sans-serif;
+  padding: 10px 20px;
+  border: 1px solid #f7b267;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #f27059;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tab-btn.active {
+  background: linear-gradient(90deg, #f7b267, #f27059);
+  color: #fff;
+  border: none;
+}
+
+.tab-btn:hover {
+  background-color: #fff1e3;
+  transform: translateY(-2px);
+}
+
+/* 🌟 Card Styles */
+.card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  padding: 30px 35px;
+  margin-bottom: 25px;
+}
+
+/* 🌟 Headings */
+.card h5 {
+  font-family: 'Poppins', sans-serif;
+  color: #f27059;
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* 🌟 Form Controls */
+.form-section .form-label {
+  font-family: 'Poppins', sans-serif;
+  display: block;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 6px;
+  margin-top: 15px;
+}
+
+.form-select,
+.form-control {
+  font-family: 'Poppins', sans-serif;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px 12px;
+  width: 100%;
+  font-size: 15px;
+  margin-bottom: 12px;
+  transition: all 0.2s ease-in-out;
+}
+
+.form-select:focus,
+.form-control:focus {
+  border-color: #f7b267;
+  outline: none;
+  box-shadow: 0 0 6px rgba(247, 178, 103, 0.5);
+}
+
+/* 🌟 Buttons */
+.btn {
+  font-family: 'Poppins', sans-serif;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 10px 18px;
+  transition: 0.3s;
+  margin-top: 5px;
+}
+
+.btn-success {
+  background-color: #f7b267;
+  color: white;
+  border: none;
+}
+
+.btn-success:hover {
+  background-color: #f27059;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background-color: #fce0c2;
+  color: #333;
+  border: none;
+}
+
+.btn-secondary:hover {
+  background-color: #fcd2a0;
+}
+
+.btn-primary {
+  background-color: #f27059;
+  color: #fff;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #f4845f;
+  transform: translateY(-2px);
+}
+
+.btn-danger {
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+}
+
+.btn-danger:hover {
+  background-color: #c0392b;
+  transform: translateY(-2px);
+}
+
+/* 🌟 Upload Section */
+.upload-section {
+  margin-top: 25px;
+  border-top: 1px dashed #f7b267;
+  padding-top: 20px;
+}
+
+.upload-section .form-label {
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #333;
+}
+
+.upload-section input[type="file"] {
+  font-family: 'Poppins', sans-serif;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  background: #fffaf3;
+  cursor: pointer;
+  width: 100%;
+}
+
+.upload-section input[type="file"]:hover {
+  background-color: #fff3e6;
+}
+
+/* 🌟 Questions List */
+.available-questions {
+  padding: 25px 30px;
+  background: white;
+  border-radius: 12px;
+}
+
+.available-questions h6 {
+  font-family: 'Poppins', sans-serif;
+  color: #f27059;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.question-item {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fffaf3;
+  border-left: 5px solid #f7b267;
+  padding: 12px 15px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  transition: all 0.3s ease;
+}
+
+.question-item:hover {
+  transform: translateX(3px);
+  box-shadow: 0 2px 8px rgba(242, 112, 89, 0.15);
+}
+
+/* 🌟 Live Waiting Users Section */
+.waiting-users-section {
+  margin-top: 30px;
+  background: linear-gradient(135deg, #fff8f3 0%, #ffe8d6 100%);
+  border-radius: 16px;
+  padding: 28px;
+  border: 2px solid #f7b267;
+  box-shadow: 0 4px 12px rgba(247, 178, 103, 0.15);
+}
+
+.waiting-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.waiting-title-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.waiting-icon {
+  width: 28px;
+  height: 28px;
+  color: #f27059;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
+}
+
+.waiting-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #2c2c2c;
+  margin: 0;
+}
+
+.waiting-badge {
+  background: linear-gradient(135deg, #f7b267 0%, #f27059 100%);
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 14px;
+  box-shadow: 0 2px 6px rgba(242, 112, 89, 0.3);
+}
+
+.delete-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.delete-btn {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.delete-btn svg {
+  width: 16px;
+  height: 16px;
+}
+
+.delete-all {
+  background: #e74c3c;
+  color: white;
+}
+
+.delete-all:hover {
+  background: #c0392b;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(231, 76, 60, 0.3);
+}
+
+.delete-last {
+  background: #e67e22;
+  color: white;
+}
+
+.delete-last:hover {
+  background: #d35400;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(230, 126, 34, 0.3);
+}
+
+.delete-waiting {
+  background: #f39c12;
+  color: white;
+}
+
+.delete-waiting:hover {
+  background: #e67e22;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(243, 156, 18, 0.3);
+}
+
+.delete-active {
+  background: #3498db;
+  color: white;
+}
+
+.delete-active:hover {
+  background: #2980b9;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+}
+
+.delete-finished {
+  background: #27ae60;
+  color: white;
+}
+
+.delete-finished:hover {
+  background: #229954;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(39, 174, 96, 0.3);
+}
+
+/* Empty State */
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.empty-icon {
+  width: 64px;
+  height: 64px;
+  color: #f7b267;
+  margin-bottom: 16px;
+  opacity: 0.6;
+}
+
+.empty-text {
+  font-family: 'Poppins', sans-serif;
+  color: #6b7280;
+  font-size: 15px;
+  margin: 0;
+}
+
+/* Users Table */
+.users-table-wrapper {
+  overflow-x: auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.users-table thead {
+  background: linear-gradient(135deg, #f7b267 0%, #f27059 100%);
+  color: white;
+}
+
+.users-table th {
+  font-family: 'Poppins', sans-serif;
+  padding: 14px 16px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.users-table tbody tr {
+  border-bottom: 1px solid #f3f4f6;
+  transition: all 0.3s ease;
+}
+
+.user-row {
+  animation: fadeInUp 0.4s ease-out both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.users-table tbody tr:hover {
+  background: linear-gradient(135deg, #fff8f3 0%, #ffe8d6 100%);
+  transform: scale(1.01);
+}
+
+.users-table td {
+  font-family: 'Poppins', sans-serif;
+  padding: 14px 16px;
+  color: #2c2c2c;
+  font-size: 14px;
+}
+
+.user-number {
+  font-weight: 700;
+  color: #f27059;
+}
+
+.user-name {
+  font-weight: 600;
+}
+
+.user-email {
+  color: #6b7280;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.status-waiting {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.status-active {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.status-finished {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.delete-user-btn {
+  background: transparent;
+  border: 2px solid #e74c3c;
+  color: #e74c3c;
+  padding: 6px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.delete-user-btn svg {
+  width: 18px;
+  height: 18px;
+}
+
+.delete-user-btn:hover {
+  background: #e74c3c;
+  color: white;
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(231, 76, 60, 0.3);
+}
+
+/* 🌟 Results Table */
+.results-section {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  padding: 30px 35px;
+}
+
+.results-section h5 {
+  font-family: 'Poppins', sans-serif;
+  color: #f27059;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.results-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.results-table th {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(90deg, #f7b267, #f27059);
+  color: white;
+  text-align: left;
+  padding: 12px 15px;
+  font-size: 15px;
+}
+
+.results-table td {
+  font-family: 'Poppins', sans-serif;
+  padding: 12px 15px;
+  border-bottom: 1px solid #eee;
+  color: #333;
+  font-size: 15px;
+}
+
+.results-table tr:hover {
+  background-color: #fff3e0;
+}
+
+/* 🌟 Responsive Design */
+@media (max-width: 768px) {
+  .admin-dashboard {
+    padding: 20px;
+  }
+
+  .tab-buttons {
+    flex-direction: column;
+  }
+
+  .card {
+    padding: 25px;
+  }
+
+  .waiting-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .delete-actions {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .users-table th,
+  .users-table td {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .results-table th,
+  .results-table td {
+    font-size: 13px;
+    padding: 10px;
+  }
+}

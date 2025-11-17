@@ -1,0 +1,97 @@
+/* 🌟 Universal reset for body margin */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 🌟 Navbar container - now full responsive width */
+.navbar-container {
+  width: 100vw; /* full viewport width */
+  min-height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #f7b267, #f27059);
+  padding: 0 40px; /* consistent spacing */
+  box-sizing: border-box; /* include padding in total width */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  overflow-x: hidden; /* avoids horizontal scroll */
+}
+
+/* 🌟 Brand title */
+.navbar-brand {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.brand-link {
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+}
+
+.brand-link:hover {
+  color: #333;
+}
+
+/* 🌟 Right side links */
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.nav-item {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+.nav-item:hover {
+  color: #333;
+}
+
+/* 🌟 Logout button */
+.logout-btn {
+  background-color: #fff;
+  border: none;
+  color: #f27059;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.25s ease-in-out;
+}
+
+.logout-btn:hover {
+  background-color: #f9d5a7;
+}
+
+/* 🌟 Mobile responsiveness */
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 25px;
+  }
+
+  .navbar-links {
+    width: 100%;
+    justify-content: flex-start;
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  .nav-item,
+  .logout-btn {
+    font-size: 15px;
+  }
+}

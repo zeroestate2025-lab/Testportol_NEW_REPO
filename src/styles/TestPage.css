@@ -1,0 +1,176 @@
+/* Global Layout */
+.test-container {
+  background: linear-gradient(180deg, #f9fafc, #fef5ed);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 80px 20px;
+  font-family: "Inter", "Segoe UI", sans-serif;
+}
+
+/* Main Card */
+.test-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  padding: 40px 45px;
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  animation: fadeIn 0.6s ease;
+}
+
+/* Header */
+.test-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #f5e1c0;
+  padding-bottom: 15px;
+}
+
+.test-header h5 {
+  color: #222;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+
+.test-header small {
+  color: #777;
+  font-size: 14px;
+}
+
+.badge {
+  background: linear-gradient(90deg, #ff9a76, #ff7b54);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  color: white;
+  font-weight: 600;
+  box-shadow: 0 3px 6px rgba(255, 122, 84, 0.3);
+}
+
+/* Question Section */
+.question-text {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2a2a2a;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+/* Theory Answer Box */
+.theory-input {
+  width: 100%;
+  border-radius: 12px;
+  border: 1.5px solid #e4d7c7;
+  padding: 14px 16px;
+  font-size: 15px;
+  resize: vertical;
+  background: #fffdf9;
+  transition: all 0.25s ease;
+  font-family: inherit;
+  color: #333;
+}
+
+.theory-input:focus {
+  border-color: #ff9a76;
+  box-shadow: 0 0 8px rgba(255, 122, 84, 0.25);
+  background: #fffaf6;
+  outline: none;
+}
+
+/* Footer Buttons */
+.test-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+}
+
+.btn {
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 10px 20px;
+  transition: 0.3s ease;
+  font-size: 15px;
+  margin-right: 10px;
+}
+
+.btn-success {
+  background: linear-gradient(90deg, #ff9a76, #ff7b54);
+  color: white;
+  border: none;
+}
+
+.btn-success:hover {
+  transform: scale(1.05);
+  background: linear-gradient(90deg, #ff8356, #ff6b3a);
+  box-shadow: 0 3px 10px rgba(255, 120, 80, 0.4);
+}
+
+.btn-secondary {
+  background: #f5e1c0;
+  color: #333;
+  border: none;
+}
+
+.btn-secondary:hover {
+  background: #f1d5a7;
+  transform: scale(1.05);
+}
+
+/* Review Page */
+.review-question {
+  background: #fffdf8;
+  border-left: 4px solid #ff9a76;
+  padding: 12px 16px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  transition: all 0.2s ease;
+}
+
+.review-question:hover {
+  background: #fffaf2;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Anti-cheat: prevent selecting text generally to discourage copying.
+   Inputs and textareas keep selectable so candidates can type answers. */
+.no-select,
+body .test-card {
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+
+/* Allow selection inside form fields */
+.test-card input,
+.test-card textarea,
+.test-card .theory-input,
+.test-card select {
+  -webkit-user-select: text !important;
+  -moz-user-select: text !important;
+  -ms-user-select: text !important;
+  user-select: text !important;
+}
