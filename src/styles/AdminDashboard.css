@@ -304,74 +304,31 @@
   font-family: 'Poppins', sans-serif;
   display: flex;
   align-items: center;
-  gap: 6px;
-  padding: 8px 14px;
+  gap: 8px;
+  padding: 10px 18px;
   border: 2px solid transparent;
   border-radius: 8px;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .delete-btn svg {
-  width: 16px;
-  height: 16px;
+  width: 18px;
+  height: 18px;
 }
 
 .delete-all {
-  background: #e74c3c;
+  background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
   color: white;
-}
-
-.delete-all:hover {
-  background: #c0392b;
-  transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(231, 76, 60, 0.3);
 }
 
-.delete-last {
-  background: #e67e22;
-  color: white;
-}
-
-.delete-last:hover {
-  background: #d35400;
+.delete-all:hover {
+  background: linear-gradient(135deg, #c0392b 0%, #a93226 100%);
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(230, 126, 34, 0.3);
-}
-
-.delete-waiting {
-  background: #f39c12;
-  color: white;
-}
-
-.delete-waiting:hover {
-  background: #e67e22;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(243, 156, 18, 0.3);
-}
-
-.delete-active {
-  background: #3498db;
-  color: white;
-}
-
-.delete-active:hover {
-  background: #2980b9;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
-}
-
-.delete-finished {
-  background: #27ae60;
-  color: white;
-}
-
-.delete-finished:hover {
-  background: #229954;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(39, 174, 96, 0.3);
+  box-shadow: 0 6px 16px rgba(231, 76, 60, 0.4);
 }
 
 /* Empty State */
